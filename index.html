@@ -107,11 +107,14 @@
 
   /* PROMINENT LIVE-WORK CARDS */
   .feat{display:block;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:28px 30px;text-decoration:none;transition:border-color .15s,box-shadow .15s;margin-bottom:16px}
-  .feat:hover{border-color:var(--ink);box-shadow:0 12px 34px -18px rgba(31,53,86,.5)}
+  .feat:hover{border-color:#d4d8de;box-shadow:0 8px 24px -16px rgba(31,53,86,.35)}
   .feat-kind{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
   .feat-t{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:26px;color:var(--ink);line-height:1.1;margin-bottom:8px}
   .feat-d{font-size:14.5px;color:#111318;max-width:520px;margin-bottom:12px}
   .feat-go{font-size:13.5px;font-weight:700;color:var(--accent)}
+  .feat-links{display:flex;gap:22px;flex-wrap:wrap;margin-top:4px}
+  .feat-links a{font-size:13.5px;font-weight:700;color:var(--accent);text-decoration:none;transition:color .15s}
+  .feat-links a:hover{color:var(--accent-dk)}
   .feat-r{padding-left:26px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
   .feat-stat{text-align:center}
   .feat-n{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:40px;color:var(--ink);line-height:1}
@@ -235,14 +238,17 @@
     <h2 class="sec">Campaigns and pages I built and produced.</h2>
     <p class="lead">Promotional campaigns and the pages that carried them, which I built and produced, and for which I wrote the surrounding marketing. Together they helped grow the subscriber base 200% in under a year.</p>
     <div class="links">
-      <a class="feat" href="https://www.nxtwaveresearch.com/elons-next-project">
+      <div class="feat">
         <div class="feat-l">
           <div class="feat-kind">Flagship Campaign</div>
           <div class="feat-t">Elon's Next Project</div>
-          <div class="feat-d">The promotional campaign and landing page behind our biggest subscriber push. I built and produced the campaign and wrote the marketing that drove it.</div>
-          <div class="feat-go">View the campaign &rarr;</div>
+          <div class="feat-d">The promotional campaign behind our biggest subscriber push. I built and produced the campaign, including the long-form promotional video and the subscribe page, and wrote the marketing that drove it.</div>
+          <div class="feat-links">
+            <a href="https://www.nxtwaveresearch.com/elons-next-project">Promotional video &rarr;</a>
+            <a href="https://www.nxtwaveresearch.com/subscribe-to-the-mccall-letter--elon-s-next-project-">Subscribe landing page &rarr;</a>
+          </div>
         </div>
-      </a>
+      </div>
     </div>
     <div class="lp-grid">
       <a class="lp" href="https://nxtwaveresearch.github.io/spacex-event/">
