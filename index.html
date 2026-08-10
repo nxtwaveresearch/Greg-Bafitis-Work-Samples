@@ -104,6 +104,25 @@
   .lk .lt{font-weight:600;font-size:15px;color:var(--ink);margin-bottom:3px}
   .lk .ld{font-size:13px;color:var(--muted)}
 
+
+  /* PROMINENT LIVE-WORK CARDS */
+  .feat{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:28px 30px;text-decoration:none;transition:border-color .15s,box-shadow .15s;margin-bottom:16px}
+  .feat:hover{border-color:var(--ink);box-shadow:0 12px 34px -18px rgba(31,53,86,.5)}
+  .feat-kind{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+  .feat-t{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:26px;color:var(--ink);line-height:1.1;margin-bottom:8px}
+  .feat-d{font-size:14.5px;color:#111318;max-width:520px;margin-bottom:12px}
+  .feat-go{font-size:13.5px;font-weight:700;color:var(--accent)}
+  .feat-r{padding-left:26px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+  .feat-stat{text-align:center}
+  .feat-n{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:40px;color:var(--ink);line-height:1}
+  .feat-nl{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.35}
+  .lp-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+  .lp{display:block;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px;text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s}
+  .lp:hover{transform:translateY(-3px);border-color:var(--ink);box-shadow:0 12px 30px -20px rgba(31,53,86,.5)}
+  .lp-kind{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+  .lp-t{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:18px;color:var(--ink);line-height:1.2;margin-bottom:7px}
+  .lp-d{font-size:13.5px;color:#111318}
+
   footer{border-top:1px solid var(--line);padding:30px 0 50px;text-align:center;color:var(--muted);font-size:13.5px}
   footer a{color:var(--accent);text-decoration:none}
 
@@ -111,6 +130,9 @@
     .metrics{grid-template-columns:1fr 1fr}
     .cards{grid-template-columns:1fr}
     .links{grid-template-columns:1fr}
+    .feat{grid-template-columns:1fr}
+    .feat-r{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:16px;text-align:left}
+    .lp-grid{grid-template-columns:1fr}
     .sl-row{grid-template-columns:1fr}
     .sl-stat{text-align:left}
   }
@@ -137,7 +159,7 @@
       <div class="metric"><div class="n">19%</div><div class="l">New subscribers converted to the lifetime upsell</div></div>
       <div class="metric"><div class="n">43%</div><div class="l">Average open rate on the daily e-letter</div></div>
       <div class="metric"><div class="n">94%</div><div class="l">Annual subscriber retention</div></div>
-      <div class="metric"><div class="n">1,000+</div><div class="l">Paid subscribers from one 4-month campaign</div></div>
+      <div class="metric"><div class="n">200%</div><div class="l">Subscriber growth in under a year</div></div>
     </div>
   </section>
 
@@ -211,23 +233,42 @@
   <section class="plain"><div class="band-inner">
     <div class="sec-eyebrow">Live Pages I Wrote &amp; Built</div>
     <h2 class="sec">Campaigns and pages I built and produced.</h2>
-    <p class="lead">Promotional campaigns and the pages that carried them, which I built and produced, and for which I wrote the surrounding marketing. The first brought in more than 1,000 paid subscribers over four months.</p>
+    <p class="lead">Promotional campaigns and the pages that carried them, which I built and produced, and for which I wrote the surrounding marketing. Together they helped grow the subscriber base 200% in under a year.</p>
     <div class="links">
-      <a class="lk" href="https://www.nxtwaveresearch.com/elons-next-project">
-        <div class="lt">Elon's Next Project &rarr;</div>
-        <div class="ld">Campaign landing page &middot; 1,000+ paid subscribers in 4 months</div>
+      <a class="feat" href="https://www.nxtwaveresearch.com/elons-next-project">
+        <div class="feat-l">
+          <div class="feat-kind">Flagship Campaign</div>
+          <div class="feat-t">Elon's Next Project</div>
+          <div class="feat-d">The promotional campaign and landing page behind our biggest subscriber push. I built and produced the campaign and wrote the marketing that drove it.</div>
+          <div class="feat-go">View the campaign &rarr;</div>
+        </div>
+        <div class="feat-r">
+          <div class="feat-stat">
+            <div class="feat-n">200%</div>
+            <div class="feat-nl">subscriber growth</div>
+          </div>
+          <div class="feat-stat">
+            <div class="feat-n">19%</div>
+            <div class="feat-nl">upsell conversion</div>
+          </div>
+        </div>
       </a>
-      <a class="lk" href="https://nxtwaveresearch.github.io/spacex-event/">
-        <div class="lt">SpaceX IPO Event &rarr;</div>
-        <div class="ld">Live webinar registration page</div>
+    </div>
+    <div class="lp-grid">
+      <a class="lp" href="https://nxtwaveresearch.github.io/spacex-event/">
+        <div class="lp-kind">Event Page</div>
+        <div class="lp-t">SpaceX IPO Event &rarr;</div>
+        <div class="lp-d">Live webinar registration page, built and produced for a time-sensitive investor event.</div>
       </a>
-      <a class="lk" href="https://nxtwaveresearch.github.io/the-quantum-moment/">
-        <div class="lt">The Quantum Moment &rarr;</div>
-        <div class="ld">Live event page off a breaking news hook</div>
+      <a class="lp" href="https://nxtwaveresearch.github.io/the-quantum-moment/">
+        <div class="lp-kind">Event Page</div>
+        <div class="lp-t">The Quantum Moment &rarr;</div>
+        <div class="lp-d">Live event page built around a breaking government-policy news hook.</div>
       </a>
-      <a class="lk" href="https://www.nxtwaveresearch.com/archive">
-        <div class="lt">Market Insights &mdash; Daily Newsletter &rarr;</div>
-        <div class="ld">The daily e-letter I produced and operated &middot; 43% avg open rate</div>
+      <a class="lp" href="https://www.nxtwaveresearch.com/archive">
+        <div class="lp-kind">Daily Newsletter</div>
+        <div class="lp-t">Market Insights &rarr;</div>
+        <div class="lp-d">The daily e-letter I produced and operated, at a 43% average open rate.</div>
       </a>
     </div>
   </div></section>
