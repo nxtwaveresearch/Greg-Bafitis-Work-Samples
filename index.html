@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greg Bafitis &mdash; Direct-Response Copy & Newsletter Work</title>
+<meta property="og:title" content="Greg Bafitis &mdash; Direct-Response Copy & Newsletter Work">
+<meta property="og:description" content="Subject-line testing, offer copy, and daily-newsletter work in subscription financial media.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1F3556; --body:#333a44; --muted:#6b7280; --line:#e3e6ea;
+    --bg:#ffffff; --bg2:#f6f7f9; --accent:#1F3556; --accent-dk:#16283f;
+    --green:#0f7a4d; --chip:#eef1f5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--body);font-family:'Carlito','Calibri',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+  .serif{font-family:'Carlito','Calibri',sans-serif}
+
+  /* HERO */
+  header.top{border-bottom:1px solid var(--line);background:var(--bg)}
+  .top-inner-c{max-width:920px;margin:0 auto;padding:30px 24px 22px;text-align:center;border-bottom:2px solid var(--ink)}
+  .brand-c{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:30px;color:var(--ink);letter-spacing:.02em}
+  .tagline-c{font-size:15px;color:var(--muted);margin-top:3px}
+  .contact-c{font-size:13px;color:var(--muted);margin-top:8px}
+  .brand{font-weight:700;font-size:18px;color:var(--ink);letter-spacing:-.01em}
+  .brand span{color:var(--accent)}
+  .contact{font-size:13.5px;color:var(--muted)}
+  .contact a{color:var(--muted);text-decoration:none}
+  .contact a:hover{color:var(--accent)}
+
+  .hero{padding:56px 0 40px}
+  .hero .eyebrow{color:var(--accent);font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+  .hero h1{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:clamp(30px,4.6vw,46px);line-height:1.1;color:var(--ink);letter-spacing:-.01em;margin-bottom:18px}
+  .hero p{font-size:18px;max-width:660px;margin-bottom:10px}
+  .hero p.small{font-size:15px;color:var(--muted);max-width:640px}
+
+  /* METRIC STRIP */
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:34px 0 8px}
+  .metric{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px 16px}
+  .metric .n{font-weight:700;font-size:26px;color:var(--ink);line-height:1;letter-spacing:-.02em}
+  .metric .l{font-size:12.5px;color:var(--muted);margin-top:7px;line-height:1.35}
+
+  section{padding:38px 0;border-top:1px solid var(--line)}
+  .sec-eyebrow{color:var(--accent);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+  h2.sec{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:clamp(24px,3.4vw,32px);color:var(--ink);line-height:1.15;margin-bottom:12px;letter-spacing:-.01em}
+  .lead{font-size:16.5px;max-width:680px;margin-bottom:26px}
+
+  /* SUBJECT LINE TABLE */
+  .sl-note{font-size:13.5px;color:var(--muted);margin-bottom:18px;font-style:italic}
+  .sl{display:flex;flex-direction:column;gap:10px}
+  .sl-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px 16px;transition:border-color .15s,box-shadow .15s}
+  .sl-row:hover{border-color:#d4d8de;box-shadow:0 4px 14px -8px rgba(0,0,0,.18)}
+  .sl-row.win{border-color:#bfe3ce;background:#f4fbf7}
+  .sl-copy{font-family:'Carlito','Calibri',sans-serif;font-size:17px;color:var(--ink);line-height:1.35}
+  .sl-copy .tag{display:inline-block;font-family:'Inter',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:#fbe9ec;border-radius:4px;padding:2px 7px;margin-left:8px;vertical-align:middle}
+  .sl-copy .tag.won{color:var(--green);background:#e3f5ec}
+  .sl-stat{text-align:right;font-size:12.5px;color:var(--muted);white-space:nowrap;line-height:1.4}
+  .sl-stat b{display:block;font-family:'Inter',sans-serif;font-size:15px;color:var(--ink);font-weight:700}
+
+  .angle-note{margin-top:22px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:8px;padding:16px 18px;font-size:15px}
+  .angle-note b{color:var(--ink)}
+
+  /* SAMPLE CARDS */
+  .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column}
+  .card .kind{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  .card h3{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:19px;color:var(--ink);line-height:1.25;margin-bottom:8px}
+  .card p{font-size:14px;color:var(--body);margin-bottom:16px;flex:1}
+  .card a{font-size:13.5px;font-weight:600;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+  .card a:hover{color:var(--accent-dk)}
+  .card a::after{content:"\2192";transition:transform .15s}
+  .card a:hover::after{transform:translateX(3px)}
+
+  /* LINKS LIST */
+  .links{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .lk{display:block;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:15px 17px;text-decoration:none;transition:border-color .15s,box-shadow .15s}
+  .lk:hover{border-color:#d4d8de;box-shadow:0 4px 14px -8px rgba(0,0,0,.18)}
+  .lk .lt{font-weight:600;font-size:15px;color:var(--ink);margin-bottom:3px}
+  .lk .ld{font-size:13px;color:var(--muted)}
+
+  footer{border-top:1px solid var(--line);padding:30px 0 50px;text-align:center;color:var(--muted);font-size:13.5px}
+  footer a{color:var(--accent);text-decoration:none}
+
+  @media(max-width:760px){
+    .metrics{grid-template-columns:1fr 1fr}
+    .cards{grid-template-columns:1fr}
+    .links{grid-template-columns:1fr}
+    .sl-row{grid-template-columns:1fr}
+    .sl-stat{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner-c">
+    <div class="brand-c">GREG BAFITIS</div>
+    <div class="tagline-c">Marketing &middot; Content Operations</div>
+    <div class="contact-c">516 510 0803 &nbsp;|&nbsp; gregbafitis@gmail.com &nbsp;|&nbsp; linkedin.com/in/greg-bafitis &nbsp;|&nbsp; Silverthorne, CO</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero" style="border-top:none">
+    <div class="eyebrow">Direct-Response Copy &amp; Newsletter</div>
+    <h1>Selected Direct-Response &amp; Newsletter Work</h1>
+    <p>Direct-response copy, subject-line testing, and daily-newsletter work from ten years in subscription financial media, most recently at NXT Wave Research, an independent publisher I co-ran.</p>
+    <p class="small">Below: subject-line and angle testing from a single campaign, full email samples, and the daily newsletter work behind a 43% average open rate.</p>
+
+    <div class="metrics">
+      <div class="metric"><div class="n">40+</div><div class="l">Subject-line &amp; angle variations written for one campaign</div></div>
+      <div class="metric"><div class="n">43%</div><div class="l">Average open rate on the daily e-letter</div></div>
+      <div class="metric"><div class="n">90+</div><div class="l">Marketing emails written per month</div></div>
+      <div class="metric"><div class="n">1,000+</div><div class="l">Paid subscribers from one 4-month campaign</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Copy Testing In Action</div>
+    <h2 class="sec">One offer, forty-plus angles, rewritten toward what worked.</h2>
+    <p class="lead">These are subject lines I wrote for a single subscription campaign, the "Elon's Next Project" promo, run across our CPA affiliate network. I wrote each variation, watched click and open data come back per send, and evolved the angle as the story moved from Elon's private AI to the SpaceX IPO. A few of the winners:</p>
+    <div class="sl-note">Subject lines I wrote. Performance shown is click-through rate on that send across the affiliate network.</div>
+
+    <div class="sl">
+      <div class="sl-row win">
+        <div class="sl-copy">Elon's "Hidden" Company <span class="tag won">Top angle</span></div>
+        <div class="sl-stat"><b>19.2% CTR</b>strongest performer</div>
+      </div>
+      <div class="sl-row win">
+        <div class="sl-copy">This small stock could surge when SpaceX goes public <span class="tag won">Scaled</span></div>
+        <div class="sl-stat"><b>1.5% CTR</b>scaled to top spend</div>
+      </div>
+      <div class="sl-row">
+        <div class="sl-copy">SpaceX did a 5-for-1 split before its IPO &mdash; here's why</div>
+        <div class="sl-stat"><b>0.8% CTR</b>news-hook angle</div>
+      </div>
+      <div class="sl-row">
+        <div class="sl-copy">Elon's Private AI Empire: The Backdoor Under $100</div>
+        <div class="sl-stat"><b>curiosity + price</b>angle test</div>
+      </div>
+      <div class="sl-row">
+        <div class="sl-copy">Missed My Tesla Calls&mdash;Don't Miss Elon's Private AI Play</div>
+        <div class="sl-stat"><b>authority + FOMO</b>angle test</div>
+      </div>
+      <div class="sl-row">
+        <div class="sl-copy">Remember Tesla in 2014?</div>
+        <div class="sl-stat"><b>pattern-recall</b>angle test</div>
+      </div>
+      <div class="sl-row">
+        <div class="sl-copy">SpaceX controls two-thirds of all satellites &mdash; and it is about to go public</div>
+        <div class="sl-stat"><b>proof + timing</b>angle test</div>
+      </div>
+    </div>
+
+    <div class="angle-note"><b>The point of the exercise:</b> these aren't seven rewrites of one line. They're different angles, curiosity, price, authority, FOMO, pattern recognition, hard news, each a real bet on what would make a financial reader click. When "Elon's Hidden Company" broke away, I leaned in; when the SpaceX IPO news hit, I rewrote the whole campaign around it within days.</div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Full Email Samples</div>
+    <h2 class="sec">The copy, start to finish.</h2>
+    <p class="lead">Three complete emails I wrote and sent for the daily list, one editorial-to-offer, one event promo, one lifetime upsell. Each was written for a live, opted-in audience.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="kind">Editorial &rarr; Offer</div>
+        <h3>"Is a Space Stock Bubble Forming?"</h3>
+        <p>A timely market take that earns the read, then hands the engaged reader to a related paid offer without reading like an ad. The daily-letter balance the 43% open rate ran on.</p>
+        <a href="samples/02_Editorial_to_Offer_Email.pdf">Read the email</a>
+      </div>
+      <div class="card">
+        <div class="kind">Event Promo</div>
+        <h3>"The Government Just Made a $2 Billion Bet"</h3>
+        <p>A same-week news hook turned into a reason to register now, driving sign-ups to a live investor webinar. Written fast, built to convert on urgency and angle.</p>
+        <a href="samples/03_Event_Promo_Email.pdf">Read the email</a>
+      </div>
+      <div class="card">
+        <div class="kind">Lifetime Upsell</div>
+        <h3>"This Is Why Some Subscribers See 100%+ Gains"</h3>
+        <p>The upsell that made the funnel profitable, converting 19% of new subscribers to a $219 lifetime tier on a front-end product that lost money on day one.</p>
+        <a href="samples/01_Lifetime_Upsell_Promo.pdf">Read the email</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Live Pages I Wrote &amp; Built</div>
+    <h2 class="sec">Promo and event pages, copy through code.</h2>
+    <p class="lead">Landing and registration pages where I wrote the copy and built the page. The first drove 1,000+ paid subscribers in four months.</p>
+    <div class="links">
+      <a class="lk" href="https://www.nxtwaveresearch.com/elons-next-project">
+        <div class="lt">Elon's Next Project &rarr;</div>
+        <div class="ld">Campaign landing page &middot; 1,000+ paid subscribers in 4 months</div>
+      </a>
+      <a class="lk" href="https://nxtwaveresearch.github.io/spacex-event/">
+        <div class="lt">SpaceX IPO Event &rarr;</div>
+        <div class="ld">Live webinar registration page</div>
+      </a>
+      <a class="lk" href="https://nxtwaveresearch.github.io/the-quantum-moment/">
+        <div class="lt">The Quantum Moment &rarr;</div>
+        <div class="ld">Live event page off a breaking news hook</div>
+      </a>
+      <a class="lk" href="https://www.nxtwaveresearch.com/archive">
+        <div class="lt">Market Insights &mdash; Daily Newsletter &rarr;</div>
+        <div class="ld">The daily e-letter I produced and operated &middot; 43% avg open rate</div>
+      </a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  Greg Bafitis &middot; <a href="mailto:gregbafitis@gmail.com">gregbafitis@gmail.com</a> &middot; <a href="https://linkedin.com/in/greg-bafitis">LinkedIn</a><br>
+  <span style="font-size:12px">Subject-line performance data from our CPA affiliate network reporting. Copy and offers written by me; affiliate partners ran the sends.</span>
+</footer>
+
+</body>
+</html>
