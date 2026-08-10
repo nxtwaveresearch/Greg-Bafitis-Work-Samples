@@ -106,7 +106,8 @@
 
 
   /* PROMINENT LIVE-WORK CARDS */
-  .feat{display:block;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:28px 30px;text-decoration:none;transition:border-color .15s,box-shadow .15s;margin-bottom:16px}
+  .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+  .feat{display:block;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:28px 30px;text-decoration:none;transition:border-color .15s,box-shadow .15s}
   .feat:hover{border-color:#d4d8de;box-shadow:0 8px 24px -16px rgba(31,53,86,.35)}
   .feat-kind{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
   .feat-t{font-family:'Carlito','Calibri',sans-serif;font-weight:700;font-size:26px;color:var(--ink);line-height:1.1;margin-bottom:8px}
@@ -133,7 +134,7 @@
     .metrics{grid-template-columns:1fr 1fr}
     .cards{grid-template-columns:1fr}
     .links{grid-template-columns:1fr}
-    .feat{grid-template-columns:1fr}
+    .feat-grid{grid-template-columns:1fr}
     .feat-r{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:16px;text-align:left}
     .lp-grid{grid-template-columns:1fr}
     .sl-row{grid-template-columns:1fr}
@@ -238,14 +239,27 @@
     <h2 class="sec">Campaigns and pages I built and produced.</h2>
     <p class="lead">Promotional campaigns and the pages that carried them, which I built and produced, and for which I wrote the surrounding marketing. Together they helped grow the subscriber base 200% in under a year.</p>
     <div class="links">
-      <div class="feat">
-        <div class="feat-l">
-          <div class="feat-kind">Flagship Campaign</div>
-          <div class="feat-t">Elon's Next Project</div>
-          <div class="feat-d">The promotional campaign behind our biggest subscriber push. I built and produced the campaign, including the long-form promotional video and the subscribe page, and wrote the marketing that drove it.</div>
-          <div class="feat-links">
-            <a href="https://www.nxtwaveresearch.com/elons-next-project">Promotional video &rarr;</a>
-            <a href="https://www.nxtwaveresearch.com/subscribe-to-the-mccall-letter--elon-s-next-project-">Subscribe landing page &rarr;</a>
+      <div class="feat-grid">
+        <div class="feat">
+          <div class="feat-l">
+            <div class="feat-kind">Front-End Campaign</div>
+            <div class="feat-t">Elon's Next Project</div>
+            <div class="feat-d">The front-end campaign behind our biggest subscriber push. I built and produced the campaign, including the long-form promotional video and the subscribe page, and wrote the marketing that drove it.</div>
+            <div class="feat-links">
+              <a href="https://www.nxtwaveresearch.com/elons-next-project">Promotional video &rarr;</a>
+              <a href="https://www.nxtwaveresearch.com/subscribe-to-the-mccall-letter--elon-s-next-project-">Subscribe page &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-l">
+            <div class="feat-kind">Back-End Upsell</div>
+            <div class="feat-t">The Electrification of Everything</div>
+            <div class="feat-d">The back-end upsell campaign moving subscribers into the premium Early Opportunities tier. I built and produced the campaign, including the promotional video and the subscribe page, and wrote the marketing behind it.</div>
+            <div class="feat-links">
+              <a href="https://www.nxtwaveresearch.com/electrification-of-everything">Promotional video &rarr;</a>
+              <a href="https://www.nxtwaveresearch.com/subscribe-to-early-opportunities-report--e-o-e-">Subscribe page &rarr;</a>
+            </div>
           </div>
         </div>
       </div>
